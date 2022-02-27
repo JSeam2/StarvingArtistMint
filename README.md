@@ -24,7 +24,8 @@ allow someone else to mint for a fee. Right now subsequent mints are paid for by
 
 5. Using Clones results in the contract creator being the Factory contract. Also you can't read and write Cloned contracts on etherscan atm.
 
-6. The Flashbot sponsor code requires the execution wallet (the wallet who isn't sponsoring the tx) to have sufficient eth to fund the transaction to be reimbursed later by the sponsor wallet.
+6. The Flashbot sponsor code requires the execution wallet (the wallet who isn't sponsoring the tx) to have sufficient eth to fund the transaction to be reimbursed later by the sponsor wallet. So it's not completely gas free. 
+A Gas Station Network might be the alternative solution.
 
 ## Goerli Deployments
 StarvingArtistMint deployed to: [0x95e49076fdc6a1058F9d21910301A5f45e8642D9](https://goerli.etherscan.io/address/0x95e49076fdc6a1058F9d21910301A5f45e8642D9)
