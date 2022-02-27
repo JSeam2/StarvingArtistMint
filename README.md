@@ -1,10 +1,11 @@
 # Starving Artist Mint 
 
-This is a **non-production ready** experimental implementation of 0xngmi proposal regarding Counterfactural Minting/Sponsored Minting found in this [tweet](https://twitter.com/0xngmi/status/1447015858925195268)
+This is a **non-production ready** experimental implementation of 0xngmi proposal regarding Counterfactual Minting/Sponsored Minting found in this [tweet](https://twitter.com/0xngmi/status/1447015858925195268)
 
 ## Motivations
 
-The goal of Starving Artist Mint is to allow an artist to create a NFT collection by being sponsored through initial buyers. 
+The goal of Starving Artist Mint is to allow an artist to create a NFT collection by being sponsored through an initial buyer. 
+
 The goal is to give artists more autonomy and to not be reliant on Marketplace contracts like Opensea or Rarible.  
 
 Gas in this case is subsidized by the initial buyer who would deploy the NFT contract via a clone and mint the first NFT for themselves. 
@@ -26,8 +27,9 @@ allow someone else to mint for a fee. Right now subsequent mints are paid for by
 6. The Flashbot sponsor code requires the execution wallet (the wallet who isn't sponsoring the tx) to have sufficient eth to fund the transaction to be reimbursed later by the sponsor wallet.
 
 ## Goerli Deployments
-StarvingArtistMint deployed to: 0x95e49076fdc6a1058F9d21910301A5f45e8642D9
-StarvingArtistMintFactory deployed to: 0x0563EacF70D7030BFaB3a94437085838E65E1D47
+StarvingArtistMint deployed to: [0x95e49076fdc6a1058F9d21910301A5f45e8642D9](https://goerli.etherscan.io/address/0x95e49076fdc6a1058F9d21910301A5f45e8642D9)
+
+StarvingArtistMintFactory deployed to: [0x0563EacF70D7030BFaB3a94437085838E65E1D47](https://goerli.etherscan.io/address/0x0563eacf70d7030bfab3a94437085838e65e1d47)
 
 ## Quickstart
 1. Run `yarn` to install dependencies
