@@ -27,6 +27,8 @@ allow someone else to mint for a fee. Right now subsequent mints are paid for by
 6. The Flashbot sponsor code requires the execution wallet (the wallet who isn't sponsoring the tx) to have sufficient eth to fund the transaction to be reimbursed later by the sponsor wallet. So it's not completely gas free. 
 A Gas Station Network might be the alternative solution.
 
+7. It's possible to deploy Transparent Proxies
+
 ## Goerli Deployments
 StarvingArtistMint deployed to: [0x95e49076fdc6a1058F9d21910301A5f45e8642D9](https://goerli.etherscan.io/address/0x95e49076fdc6a1058F9d21910301A5f45e8642D9)
 
@@ -43,7 +45,7 @@ StarvingArtistMintFactory deployed to: [0x0563EacF70D7030BFaB3a94437085838E65E1D
 
 1. Run `npx hardhat run scripts/deploy.js` to deploy contracts. Include `--network goerli` to deploy on Goerli.
 
-1. Run `npx hardhat run scripts/sponsor.js --network goerli` to test with the flashbot provider on Goerli.
+1. Run `npx hardhat run scripts/sponsor.js --network goerli` to test with the flashbot provider on Goerli using the Factory Contract.
 
 # Advanced Sample Hardhat Project
 
